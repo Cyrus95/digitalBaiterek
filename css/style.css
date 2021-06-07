@@ -26,11 +26,18 @@ p {
     color: #5CB95C;
 }
 
+.btn  {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+
 .btn-primary {
     background-color: #5CB95C;
     border-radius: 0;
     border-color: #5CB95C;
-    padding: 15px 25px
+    padding: 15px 25px;
+    
 }
 
 .btn-primary:hover ,.btn-primary:focus {
@@ -58,7 +65,7 @@ p {
     background-color: #3D3D3B;
     
     border-color: #3D3D3B;
-  
+    
     color: #fff;
     
 }
@@ -66,7 +73,9 @@ p {
 .form-control {
     border-radius: 6px;
     border: 1px solid #BEBEBE;
-    min-height: 40px;
+    min-height: 58px;
+    font-size: 18px;
+    padding: 18px 26px
 }
 
 .modal-content {
@@ -82,19 +91,31 @@ p {
     font-weight: 500;
     font-size: 26px;
     line-height: 30px;
-    text-transform: capitalize;
-    margin-bottom: 7rem;
+    text-transform: capitalize;    
+    color: #37474F;
+    margin-bottom: 70px;
 }
 
 .bin-model .form-group {
     text-align: left;
+    margin-bottom: 70px;
 }
-
+.bin-model .form-group  label{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    text-transform: capitalize;
+    
+    color: #37474F;
+}
 .multistep-form .card{
     margin-bottom: 20px;
     border-radius: 0;
     box-shadow: none;
     border: 0;
+    padding: 50px
 }
 
 .multistep-form .card-header  {
@@ -115,14 +136,23 @@ p {
 }
 
 .multistep-form .card .card-body .sub-text {
-    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
     color: #78909C;
     margin-bottom: 20px;
     display: block;
+    transform: translate( 0 , -25px );
 }
 
 .multistep-form .card .card-body h4{
     margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: capitalize;
+    color: #37474F
 }
 
 .multistep-form .card .card-body .form-group label {
@@ -131,9 +161,11 @@ p {
 }
 
 .form-control:disabled, .form-control[readonly] {
-    background-color: #F7F8FA;
+    /* background-color: #F7F8FA; */
     bordeR: #F7F8FA;
     opacity: 1;
+    background: #F7F8FA;
+    border-radius: 6px;
 }
 
 .button_wrap {
@@ -143,13 +175,16 @@ p {
 
 .multistep-form-tab .nav-pills .nav-link {
     border-radius: 0;
-    PADDING: 20PX;
-    font-size: 18px;
-    font-weight: 500;
+    padding: 35px 10px;
+    
     color: #37474F;
     border-bottom: 4px solid #fff;
     box-shadow:  0 1px 0 #dedede;
-    background: #fff
+    background: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
     
 }
 
@@ -160,10 +195,22 @@ p {
 
 .multistep-form-tab .tab-content {
     background: #fff;
-    padding: 30px;
+    padding: 40px;
     margin-bottom: 50px;
 }
 
+
+.multistep-form-tab .tab-content  h4 {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 32px;
+}
+.multistep-form-tab .tab-content p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+}
 .uploadList {
     list-style: none;
     padding: 0;
@@ -178,14 +225,16 @@ p {
 }
 
 .uploadList li img {
-    width: 30px;
-    height: auto;
-    margin-right: 10px
+    height: 45px;
+    weight: auto;
+    margin-right: 10px;
+    margin-bottom: 0;
 }
 
 .uploadList li .title {
-    margin-top: 15px;
+    margin-top: 10px;
     color: #37474F;
+    margin-bottom: 0;
 }
 
 .uploadList li  i {
@@ -207,9 +256,12 @@ p {
 .uploadList  .btn-file {
     padding: 15px 30px;
     background: #fff;
+    margin-right: 15px;
+    font-size: 17px;
+    line-height: 32px;
+    text-transform: capitalize;
     color: #37474F;
-    font-size: 16px;
-    margin-right: 5px;
+    font-weight: 400;
 }
 
 .uploadList .wrapper input[type=file] {
@@ -239,6 +291,15 @@ p {
     padding: 15px;
     margin: 10px;
     position: relative;
+}
+.upload-title{
+    margin-top: 15px;
+    font-size: 17px;
+    line-height: 32px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+
+    color: #AFB0B2;
 }
 .fileIconsUploaded li.selected::before {
     position: absolute;
@@ -278,14 +339,41 @@ p {
         max-width: 1260px;
     }
 }
+
+.acceptance-model .modal-body {
+    padding: 40px
+}
 .acceptance_content {
     max-height: 50vh;
     overflow: auto;
+    background: #FAFAFA;
+    border: 1px solid #f1f1f1;
+    padding: 30px
+}
+.acceptance-model .custom_footer {
+    padding: 30px
+}
+.acceptance-model .custom_footer  .form-check {
+    padding-left: 20px;
+    text-transform: capitalize;
+}
+.acceptance-model .custom_footer  .form-check-input{
+    /* margin-top: 5px; */
+    margin-left: -15px;
+    border-radius: 0;
 }
 .modal-header {
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     display: block;
+}
+.modal-header h4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: capitalize;
+
+    color: #37474F;
 }
 
 .multistep-form .card-header h4 {
@@ -310,8 +398,8 @@ p {
 }
 
 .custom-select.is-invalid, .form-control.is-invalid, .was-validated .custom-select:invalid, .was-validated .form-control:invalid {
-position: relative;
-background-position:  99% center;
+    position: relative;
+    background-position:  99% center;
     background-repeat: no-repeat;
     background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='exclamation-circle' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' class='svg-inline--fa fa-exclamation-circle fa-w-16 fa-7x'%3E%3Cpath fill='%23dc3545' d='M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z' class=''%3E%3C/path%3E%3C/svg%3E");
     background-size: 20px 20px ;
@@ -329,4 +417,55 @@ background-position:  99% center;
 .table-bordered thead td, .table-bordered thead th {
     border-bottom: 1px;
     font-size: 14px;
+}
+
+
+
+/* typo */
+.breadcrumbs {
+    padding: 30px 10px
+}
+.breadcrumbs .breadcrumb-item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.multistep-form .card-header h4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: capitalize;
+}
+
+.multistep-form .card-body {
+    padding-top: 30px
+}
+
+.multistep-form .card .card-body .form-group label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #37474F;
+}
+
+.multistep-form .card .card-body .form-group {
+    margin-bottom: 25px;
+}
+
+@media (min-width: 1300px) {
+    .spacer_90 {
+        padding: 0 90px
+    }
+}
+
+.addmore {
+    color: #37474F;
+    padding-left: 15px;
+}
+.addmore .fas {
+    color: #78909C
 }
