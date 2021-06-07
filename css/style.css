@@ -28,7 +28,7 @@ p {
 
 .btn  {
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 
@@ -166,6 +166,7 @@ p {
     opacity: 1;
     background: #F7F8FA;
     border-radius: 6px;
+    border: 1px solid #F7F8FA
 }
 
 .button_wrap {
@@ -468,4 +469,64 @@ p {
 }
 .addmore .fas {
     color: #78909C
+}
+
+@media (max-width: 768px ) {
+    .breadcrumbs {
+        padding: 0 15px
+    }
+    .breadcrumbs .breadcrumb-item {
+        font-size: 18px;
+    }
+
+    .multistep-form .card {
+        padding: 20px
+    }
+
+    .multistep-form .card-header h4 {
+        font-size: 20px;
+    }
+    .multistep-form .card .card-body .form-group label {
+        font-size: 14px;
+    }
+    .form-control {
+        min-height:auto ;
+        padding: 10px 15px
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .fileIconsUploaded li {
+        width: 170px;
+    }
+    .multistep-form-tab .nav-pills .nav-link {
+        font-size: 18px;
+        padding: 20px 5px;
+        min-height: 100px;
+    }
+    .uploadList li {
+       max-width: 100%;
+    }
+    .multistep-form-tab .tab-content h4 {
+        font-size: 18px;
+    }
+    .multistep-form-tab .tab-content p {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 576px ) {
+    .multistep-form-tab .tab-content {
+        padding : 10px
+    }
+    .fileIconsUploaded li {
+        width: 44%;
+    }
+    .multistep-form .card .card-body .sub-text {
+        font-size: 14px;
+        line-height: 22px;
+    }
 }
